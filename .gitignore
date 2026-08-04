@@ -1,0 +1,28 @@
+# Large data files (download separately — see README)
+data/raw/ngsim/*.csv
+data/processed/*.pt
+data/processed/*.parquet
+data/processed/*.pkl
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# SUMO output
+*.out
+*.log
