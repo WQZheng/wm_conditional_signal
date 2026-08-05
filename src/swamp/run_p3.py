@@ -13,8 +13,9 @@ import traci
 sys.path.insert(0, os.path.dirname(__file__))
 from models import RSSM, IDM
 
-P3DIR = "/data/lab/swamp/runs/p3"
-P2DIR = "/data/lab/swamp/runs/p2v2"
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+P3DIR = os.path.join(ROOT, "runs", "p3")
+P2DIR = os.path.join(ROOT, "runs", "p2v2")
 DEV = "cuda" if torch.cuda.is_available() else "cpu"
 DT = 0.1
 INT_POS = [0, 160, 320, 480, 640]  # intersection positions (m)

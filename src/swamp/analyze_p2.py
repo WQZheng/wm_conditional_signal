@@ -6,8 +6,9 @@ import torch, numpy as np, os, sys, pickle, json
 sys.path.insert(0, os.path.dirname(__file__))
 from models import RSSM, LSTMBase, IDM
 
-DATA = "/data/lab/swamp/data/processed"
-OUT = "/data/lab/swamp/runs/p2"
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+DATA = os.path.join(ROOT, "data", "processed")
+OUT = os.path.join(ROOT, "runs", "p2")
 DEV = "cuda" if torch.cuda.is_available() else "cpu"
 S_DIM, A_DIM, PHI_DIM = 5, 2, 3
 DIM_NAMES = ["y_rel(m)", "v_f(m/s)", "a_f(m/s2)", "gap(m)", "dv(m/s)"]

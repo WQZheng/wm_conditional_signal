@@ -1,7 +1,8 @@
 """P3: Generate SUMO arterial network files (Peachtree-like, 4 intersections)."""
 import os, subprocess
 
-OUT = "/data/lab/swamp/runs/p3"
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+OUT = os.path.join(ROOT, "runs", "p3")
 os.makedirs(OUT, exist_ok=True)
 SUMO_HOME = os.environ.get("SUMO_HOME", "/usr/share/sumo")
 NETCONVERT = os.path.join(SUMO_HOME, "bin", "netconvert")

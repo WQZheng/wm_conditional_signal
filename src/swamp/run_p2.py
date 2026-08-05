@@ -8,8 +8,9 @@ import numpy as np, os, sys, pickle
 sys.path.insert(0, os.path.dirname(__file__))
 from models import RSSM, LSTMBase, IDM
 
-DATA = "/data/lab/swamp/data/processed"
-OUT = "/data/lab/swamp/runs/p2"
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+DATA = os.path.join(ROOT, "data", "processed")
+OUT = os.path.join(ROOT, "runs", "p2")
 os.makedirs(OUT, exist_ok=True)
 DEV = "cuda" if torch.cuda.is_available() else "cpu"
 S_DIM, A_DIM, PHI_DIM = 5, 2, 3

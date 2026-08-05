@@ -232,10 +232,13 @@ def normalize(seqs, stats=None, fit=True):
     return stats
 
 
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--data", default="/data/lab/swamp/data")
-    ap.add_argument("--out", default="/data/lab/swamp/data/processed")
+    ap.add_argument("--data", default=os.path.join(ROOT, "data", "raw"))
+    ap.add_argument("--out", default=os.path.join(ROOT, "data", "processed"))
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--val_frac", type=float, default=0.15)
     args = ap.parse_args()
@@ -243,7 +246,10 @@ def main():
     np.random.seed(args.seed)
 
     print("== Loading Peachtree ==")
-    df = load_peachtree(os.path.join(args.data, "ngsim_all.csv"))
+    ngsim_path = os.path.join(args.data, "ngsim", "NGSIM_all.csv")
+    if not os.path.exists(ngsim_path):
+        ngsim_path = os.path.join(args.data, "ngsim_all.csv")
+    df = load_peachtree(ngsim_path)
     print(f"  filtered rows: {len(df)}, vehicles: {df.Vehicle_ID.nunique()}")
     n_frames = int(df.Frame_ID.max()) + 10
 

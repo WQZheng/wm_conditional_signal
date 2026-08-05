@@ -1,8 +1,5 @@
 # Large data files (download separately — see README)
 data/raw/ngsim/*.csv
-data/processed/*.pt
-data/processed/*.parquet
-data/processed/*.pkl
 
 # Python
 __pycache__/
