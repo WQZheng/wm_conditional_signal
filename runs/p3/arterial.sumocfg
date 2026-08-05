@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<configuration>
+  <input>
+    <net-file value="arterial.net.xml"/>
+    <route-files value="arterial.rou.xml"/>
+  </input>
+  <time>
+    <step-length value="0.1"/>
+    <end value="1000"/>
+  </time>
+</configuration>

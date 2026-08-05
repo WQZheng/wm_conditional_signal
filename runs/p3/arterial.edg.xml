@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<edges>
+  <edge id="E0" from="N0" to="N1" numLanes="2" speed="15"/>
+  <edge id="W0" from="N1" to="N0" numLanes="2" speed="15"/>
+  <edge id="E1" from="N1" to="N2" numLanes="2" speed="15"/>
+  <edge id="W1" from="N2" to="N1" numLanes="2" speed="15"/>
+  <edge id="E2" from="N2" to="N3" numLanes="2" speed="15"/>
+  <edge id="W2" from="N3" to="N2" numLanes="2" speed="15"/>
+  <edge id="E3" from="N3" to="N4" numLanes="2" speed="15"/>
+  <edge id="W3" from="N4" to="N3" numLanes="2" speed="15"/>
+  <edge id="CN0" from="N0" to="CN0" numLanes="1" speed="10"/>
+  <edge id="SC0" from="CN0" to="N0" numLanes="1" speed="10"/>
+  <edge id="CS0" from="N0" to="CS0" numLanes="1" speed="10"/>
+  <edge id="SC0b" from="CS0" to="N0" numLanes="1" speed="10"/>
+  <edge id="CN1" from="N1" to="CN1" numLanes="1" speed="10"/>
+  <edge id="SC1" from="CN1" to="N1" numLanes="1" speed="10"/>
+  <edge id="CS1" from="N1" to="CS1" numLanes="1" speed="10"/>
+  <edge id="SC1b" from="CS1" to="N1" numLanes="1" speed="10"/>
+  <edge id="CN2" from="N2" to="CN2" numLanes="1" speed="10"/>
+  <edge id="SC2" from="CN2" to="N2" numLanes="1" speed="10"/>
+  <edge id="CS2" from="N2" to="CS2" numLanes="1" speed="10"/>
+  <edge id="SC2b" from="CS2" to="N2" numLanes="1" speed="10"/>
+  <edge id="CN3" from="N3" to="CN3" numLanes="1" speed="10"/>
+  <edge id="SC3" from="CN3" to="N3" numLanes="1" speed="10"/>
+  <edge id="CS3" from="N3" to="CS3" numLanes="1" speed="10"/>
+  <edge id="SC3b" from="CS3" to="N3" numLanes="1" speed="10"/>
+  <edge id="CN4" from="N4" to="CN4" numLanes="1" speed="10"/>
+  <edge id="SC4" from="CN4" to="N4" numLanes="1" speed="10"/>
+  <edge id="CS4" from="N4" to="CS4" numLanes="1" speed="10"/>
+  <edge id="SC4b" from="CS4" to="N4" numLanes="1" speed="10"/>
+</edges>

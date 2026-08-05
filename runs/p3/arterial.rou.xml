@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<routes>
+  <vType id="car" accel="1.5" decel="3.0" sigma="0.3" length="5" maxSpeed="15" speedFactor="0.9"/>
+  <vType id="cav" accel="3.0" decel="6.0" sigma="0.0" length="5" maxSpeed="15" color="1,0,0"/>
+  <route id="cav_route" edges="E0 E1 E2 E3"/>
+  <flow id="nb_flow" type="car" begin="0" end="900" probability="0.2" from="E0" to="E3"/>
+  <flow id="sb_flow" type="car" begin="0" end="900" probability="0.15" from="W3" to="W0"/>
+  <flow id="cross_n1" type="car" begin="0" end="900" probability="0.05" from="SC1" to="CS1"/>
+  <flow id="cross_n2" type="car" begin="0" end="900" probability="0.05" from="SC2" to="CS2"/>
+  <flow id="cross_n3" type="car" begin="0" end="900" probability="0.05" from="SC3" to="CS3"/>
+</routes>

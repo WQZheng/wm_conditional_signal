@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<nodes>
+  <node id="N0" x="0" y="0" type="traffic_light"/>
+  <node id="CN0" x="0" y="40.0" type="priority"/>
+  <node id="CS0" x="0" y="-40.0" type="priority"/>
+  <node id="N1" x="160" y="0" type="traffic_light"/>
+  <node id="CN1" x="160" y="40.0" type="priority"/>
+  <node id="CS1" x="160" y="-40.0" type="priority"/>
+  <node id="N2" x="320" y="0" type="traffic_light"/>
+  <node id="CN2" x="320" y="40.0" type="priority"/>
+  <node id="CS2" x="320" y="-40.0" type="priority"/>
+  <node id="N3" x="480" y="0" type="traffic_light"/>
+  <node id="CN3" x="480" y="40.0" type="priority"/>
+  <node id="CS3" x="480" y="-40.0" type="priority"/>
+  <node id="N4" x="640" y="0" type="traffic_light"/>
+  <node id="CN4" x="640" y="40.0" type="priority"/>
+  <node id="CS4" x="640" y="-40.0" type="priority"/>
+</nodes>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<additional>
+  <tlLogic id="N0" type="static" programID="coord" offset="0">
+    <phase duration="40" state="GGrr"/>
+    <phase duration="4" state="yyrr"/>
+    <phase duration="52" state="rrGG"/>
+    <phase duration="4" state="rryy"/>
+  </tlLogic>
+  <tlLogic id="N1" type="static" programID="coord" offset="10">
+    <phase duration="40" state="GGrr"/>
+    <phase duration="4" state="yyrr"/>
+    <phase duration="52" state="rrGG"/>
+    <phase duration="4" state="rryy"/>
+  </tlLogic>
+  <tlLogic id="N2" type="static" programID="coord" offset="21">
+    <phase duration="40" state="GGrr"/>
+    <phase duration="4" state="yyrr"/>
+    <phase duration="52" state="rrGG"/>
+    <phase duration="4" state="rryy"/>
+  </tlLogic>
+  <tlLogic id="N3" type="static" programID="coord" offset="32">
+    <phase duration="40" state="GGrr"/>
+    <phase duration="4" state="yyrr"/>
+    <phase duration="52" state="rrGG"/>
+    <phase duration="4" state="rryy"/>
+  </tlLogic>
+  <tlLogic id="N4" type="static" programID="coord" offset="42">
+    <phase duration="40" state="GGrr"/>
+    <phase duration="4" state="yyrr"/>
+    <phase duration="52" state="rrGG"/>
+    <phase duration="4" state="rryy"/>
+  </tlLogic>
+</additional>
